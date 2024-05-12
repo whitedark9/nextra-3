@@ -1,8 +1,8 @@
 const APP = {
-  name: "Nextra 2",
-  shortName: "Nextra 2",
-  domain: "https://www.github.com/nextra-2-template",
-  description: "nextra-2-template for me",
+  name: "Nextra 3",
+  shortName: "Nextra 3",
+  domain: "https://www.github.com/nextra-3",
+  description: "nextra-3-template",
   themes: ["light", "dark", "system"],
   defaultTheme: "system",
   themeStorageKey: "@theme",
