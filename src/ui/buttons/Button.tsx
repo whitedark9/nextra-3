@@ -15,6 +15,7 @@ export default function Button(props: ButtonProps) {
     mode = "contain",
     shape = "rounded",
     size = "md",
+    className,
     ...rest
   } = props;
 
@@ -31,7 +32,7 @@ export default function Button(props: ButtonProps) {
   const btnShape = React.useMemo(
     () =>
       shape === "pill"
-        ? "rounded-full px-10"
+        ? "rounded-full px-20"
         : shape === "rounded"
           ? `rounded-${size}`
           : "",
@@ -40,9 +41,9 @@ export default function Button(props: ButtonProps) {
 
   return (
     <button
-      {...rest}
-      className={clsx(btnSize, btnVariant, btnShape, props.className)}
+      className={clsx(btnSize, btnVariant, btnShape, className)}
       type={"button"}
+      {...rest}
     >
       {props.children}
     </button>

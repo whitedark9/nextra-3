@@ -1,19 +1,42 @@
 # Home
 
-import Alert from "~/ui/alert/Alert";
+import Button from "~/ui/buttons/Button";
 
-<Alert className={"mb-3"}>
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo rem odio
-  dolores debitis exercitationem architecto unde perferendis expedita? Beatae
-  cupiditate quae exercitationem harum iure nulla dicta temporibus, inventore
-  sint! Iste.
-</Alert>
+<Button shape={"none"}>Button</Button>
+
+<Button variant={"warning"}>Contain</Button>
+
+<Button shape={"pill"} className={"me-3"}>
+  Pill
+</Button>
+
+<Button mode={"outline"}>Outline</Button>
 
 ---
 
-<Alert variant={"error"} iconName={"exclamation-triangle"} className={"mb-3"}>
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo rem odio
-  dolores debitis exercitationem architecto unde perferendis expedita? Beatae
-  cupiditate quae exercitationem harum iure nulla dicta temporibus, inventore
-  sint! Iste.
-</Alert>
+<Button size={"sm"} variant={"success"}>
+  Small
+</Button>
+
+<Button variant={"info"}>Default</Button>
+
+<Button size={"lg"} variant={"error"}>
+  Large
+</Button>
+
+import { Callout } from "nextra/components";
+import Icon from "~/ui/icon/Icon";
+
+<Callout emoji={<Icon name={"info-circle"} />}>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptatibus
+  molestiae, nihil neque ea quia voluptatem laboriosam necessitatibus iste cum
+  hic repudiandae aperiam consequuntur id reiciendis quam quo deleniti! Neque.
+</Callout>
+
+import Box from "~/ui/box/Box";
+
+<Box className={"mt-3"}>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptatibus
+  molestiae, nihil neque ea quia voluptatem laboriosam necessitatibus iste cum
+  hic repudiandae aperiam consequuntur id reiciendis quam quo deleniti! Neque.
+</Box>

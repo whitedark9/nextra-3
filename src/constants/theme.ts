@@ -40,7 +40,7 @@ export const DARK_THEME = {
 
 export const TAILWIND_EXTEND = {
   colors: { light: LIGHT_THEME, dark: DARK_THEME },
-  spacing: { xs: "4px", sm: "8px", md: "10px", lg: "12px", xl: "16px" },
+  spacing: { xs: "6px", sm: "8px", md: "12px", lg: "16px", xl: "20px" },
   borderWidth: { btn: "1px", card: "1px", divider: "1px" },
   borderRadius: { xs: "2px", sm: "4px", md: "6px", lg: "8px", xl: "10px" },
   transitionDuration: { fast: "250ms", medium: "500ms", slow: "750ms" },

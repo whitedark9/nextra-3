@@ -168,13 +168,13 @@
     @apply inline-flex flex-row items-center justify-center text-center text-base font-medium leading-none outline-none transition-[scale];
   }
   .btn {
-    @apply flex flex-row items-center justify-center gap-2 px-lg py-md text-center text-base font-medium leading-none outline-none transition-[scale] duration-fast;
+    @apply inline-flex flex-row items-center justify-center gap-2 px-lg py-md text-center text-base font-medium leading-none outline-none transition-[scale] duration-fast;
   }
   .btn-sm {
-    @apply flex flex-row items-center justify-center gap-2 px-md py-sm text-center text-sm font-medium leading-none outline-none transition-[scale] duration-fast;
+    @apply inline-flex flex-row items-center justify-center gap-2 px-md py-sm text-center text-sm font-medium leading-none outline-none transition-[scale] duration-fast;
   }
   .btn-lg {
-    @apply flex flex-row items-center justify-center gap-2 px-xl py-lg text-center text-lg font-medium leading-none outline-none transition-[scale] duration-fast;
+    @apply inline-flex flex-row items-center justify-center gap-2 px-xl py-lg text-center text-lg font-medium leading-none outline-none transition-[scale] duration-fast;
   }
   .btn-icon:active,
   .btn:active,
@@ -198,6 +198,12 @@
   .btn-sm:focus,
   .btn-lg:focus {
     @apply ring-4;
+  }
+  .btn p,
+  .btn-sm p,
+  .btn-lg p,
+  .btn-icon p {
+    @apply !leading-none;
   }
   /*Btn Mode*/
   .btn-primary {
